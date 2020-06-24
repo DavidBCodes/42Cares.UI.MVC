@@ -1,7 +1,119 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+@model _42Cares.UI.MVC.Controllers.MessageViewModel
+@using (Html.BeginForm("Contact", "Home", FormMethod.Post))
+{
 
-<p>Use this area to provide additional information.</p>
+    <section class="site-blocks-cover overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 align-self-center">
+                    @*<div class="row">
+                            <div class="col-lg-11">
+                                <h1 class="ml2"><span>4</span><span>2</span><span> </span><span>C.</span><span>A.</span><span>R.</span><span>E.</span><span>S.</span></h1>
+
+                                @*<h1>42 C.A.R.E.S <span class="typed-words" Name="typed-words" tagName="typed-words"></span></h1>*
+                                <p>
+                                    Counseling | Assessment | Resilience | Education | Support
+                                </p>
+                                <p><em>Pain shared is often pain lessened...</em></p>
+                            </div>
+                        </div>*@
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12" style="margin-top: -7%;">
+                        <div class="slide-one-item home-slider owl-carousel">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Queen_Elizabeth_II_in_March_2015.jpg/454px-Queen_Elizabeth_II_in_March_2015.jpg" alt="Our Gracious Queen" class="img-fluid img">
+                            <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fi2.wp.com%2Fbitcast-a-sm.bitgravity.com%2Fslashfilm%2Fwp%2Fwp-content%2Fimages%2Ffreddie-mercury-live-aid-1.jpg&f=1&nofb=1" alt="Our Noble Queen" class="img-fluid img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg" alt="The Tin Lizzie" class="img-fluid img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/HMS_QueenElizabeth_RO8-2.jpg" alt="The Queen Mothership" class="img-fluid img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <section class="site-section" id="services-section">
+        <div class="container">
+            <div class="row mb-5 justify-content-center">
+                <div class="col-md-7 text-center">
+                    <h2 class="text-black">Queen Elizabeth II</h2>
+                    <p>
+                        Elizabeth II (Elizabeth Alexandra Mary, born 21 April 1926)[a] is the Queen of the United Kingdom and the other Commonwealth realms.
+
+                        Elizabeth was born in Mayfair, London, as the first child of the Duke and Duchess of York (later King George VI and Queen Elizabeth). Her father ascended the throne on the abdication of his brother King Edward VIII in 1936, from which time she was the heir presumptive. She was educated privately at home and began to undertake public duties during the Second World War, serving in the Auxiliary Territorial Service. In 1947, she married Philip, Duke of Edinburgh, a former prince of Greece and Denmark, with whom she has four children: Charles, Prince of Wales; Anne, Princess Royal; Prince Andrew, Duke of York; and Prince Edward, Earl of Wessex.</p>
+                    <p>
+                        When her father died in February 1952, Elizabeth became head of the Commonwealth and queen regnant of seven independent Commonwealth countries: the United Kingdom, Canada, Australia, New Zealand, South Africa, Pakistan, and Ceylon. She has reigned as a constitutional monarch through major political changes, such as devolution in the United Kingdom, Canadian patriation, and the decolonisation of Africa. Between 1956 and 1992, the number of her realms varied as territories gained independence, and as realms, including South Africa, Pakistan, and Ceylon (renamed Sri Lanka), became republics. Her many historic visits and meetings include a state visit to the Republic of Ireland and visits to or from five popes. Significant events have included her coronation in 1953 and the celebrations of her Silver, Golden, and Diamond Jubilees in 1977, 2002, and 2012, respectively. In 2017, she became the first British monarch to reach a Sapphire Jubilee. She is the longest-lived and longest-reigning British monarch. She is the longest-serving female head of state in world history, and the world's oldest living monarch, longest-reigning current monarch, and oldest and longest-serving current head of state.
+
+                        Elizabeth has occasionally faced republican sentiments and press criticism of the royal family, in particular after the breakdown of her children's marriages, her annus horribilis in 1992, and the death in 1997 of her former daughter-in-law Diana, Princess of Wales. However, in the United Kingdom, support for the monarchy has been and remains consistently high, as does her personal popularity.
+                    </p>
+                    <p><h2>"God Save Our Gracious Queen"</h2></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="footer-heading mb-4">42 C.A.R.E.S.</h2>
+                    @*<p>We are here to provide you with the support that you need to continue to live a healthy life.</p>*@
+                    <img src="~/Content/images/KCFD.jpg" />
+                </div>
+
+                <div class="col-md-3 ml-auto">
+                    <h2 class="footer-heading mb-4">Quick Links</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="#about-section" class="smoothscroll">About Us</a></li>
+                        <li><a href="#training-section" class="smoothscroll">Clinical Team</a></li>
+                        <li><a href="#services-section" class="smoothscroll">Services</a></li>
+                        <li><a href="#contact-section" class="smoothscroll">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-5">
+                        <h2 class="footer-heading mb-4">Follow Us</h2>
+                        <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                        <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                        <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                        <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                    </div>
+                    <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
+                    <form action="#" method="post" class="footer-subscribe">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary text-black" type="button" id="button-addon2">Send</button>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row pt-5 mt-5 text-left">
+                <div class="col-md-12">
+                    <div class="border-top pt-5">
+                        <p class="copyright">
+                            <small>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </small>
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+}

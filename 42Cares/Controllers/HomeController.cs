@@ -19,13 +19,17 @@ namespace _42Cares.UI.MVC.Controllers
         {
             ViewBag.Message = "Your app description page.";
 
-            return View();
+            return View("About");
         }
 
         [HttpGet]//GETS the form to fill out
         public ActionResult Contact()
         {
             return View();
+        }
+        public ActionResult Services()
+        {
+            return View("Services");
         }
 
         [HttpPost]//HANDLES the submitted form results (or "posts them")
@@ -76,6 +80,11 @@ namespace _42Cares.UI.MVC.Controllers
                 return View(msg);
             }
 
+        }
+
+        public ActionResult Bio()
+        {
+            return View("Bio");
         }
 
         [HttpGet]//Views
