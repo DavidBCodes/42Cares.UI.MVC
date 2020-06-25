@@ -131,8 +131,9 @@ body:after {
       font-size: 3rem; } }
 
 .site-footer {
-  padding: 4em 0;
-  background: #333333; }
+    padding: 4em 0;
+    background: #365e80;
+}
   @media (min-width: 768px) {
     .site-footer {
       padding: 8em 0; } }
