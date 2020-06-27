@@ -208,6 +208,8 @@
     <Content Include="Content\images\42logoLarge.png" />
     <Content Include="Content\images\42logoMD.png" />
     <Content Include="Content\images\42logoresize.png" />
+    <Content Include="Content\images\aj.jpeg" />
+    <Content Include="Content\images\ajsmall.png" />
     <Content Include="Content\images\android-chrome-192x192.png" />
     <Content Include="Content\images\android-chrome-512x512.png" />
     <Content Include="Content\images\apple-touch-icon.png" />
@@ -460,7 +462,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_OriginalLayout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Clinical.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
@@ -598,6 +600,7 @@
     <Content Include="_Archive\scss\_site-blocks.scss" />
     <Content Include="_Archive\scss\_site-navbar.scss" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Services.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

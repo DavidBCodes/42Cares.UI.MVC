@@ -1,7 +1,8 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-    <title>Local 42 &mdash; Website Template by Colorlib</title>
+    <link rel="shortcut icon" href="~/Content/images/favicon-16x16.png" type="image/png">
+    @*<link rel="icon" href = <img src="~/Content/images/apple-touch-icon.png" typeof="image/icon"/>*@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -47,29 +48,34 @@
         <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
             <div class="container">
                 <div class="row align-items-center">
-
                     <div class="col-6 col-xl-2">
-                        <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">Local 42<span class="text-primary">.</span> </a></h1>
+                        <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0"><span class="text-primary"><img src="~/Content/images/favicon.ico" /></span> </a></h1>
                     </div>
                     <div class="col-12 col-md-10 d-none d-xl-block">
                         <nav class="site-navigation position-relative text-right" role="navigation">
                             <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                                <li><a href="#home-section" class="nav-link">Home</a></li>
-                                <li><a href="~/Home/About" class="nav-link">About</a></li>
-                                <li><a href="#training-section" class="nav-link">Clinical Support</a></li>
-                                <li><a href="~/Home/Services" class="nav-link">Services</a></li>
-                                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                                @*<li class=”active”><a class=”active-link” href="@Url.Action("Home", "Index")">Home</a>*@
+                                <li class=”active”>@Html.ActionLink("Home", "Index", "Home", null, new { @class ="activelink" })</li>
+                                <li class=”active”>@Html.ActionLink("Clinical Team", "Clinical", "Home", null, new { @class ="activelink"})</li>
+                                <li class=”active”>@Html.ActionLink("Resource List", "Services", "Home", null, new { @class ="activelink"})</li>
+                                @*<li class=”active”>@Html.ActionLink("Home", "Index", "Home", null, new { @class ="activelink"})</li>
+                                <li class=”active”><a class=”active-link” href="@Url.Action("Home", "Clinical")">Clinical Team</a>
+                                <li class=”active”><a class=”active-link” href="@Url.Action("Home", "Services")">Resource List</a>
+                                <li class=”active”>
+                                    <a class=”active-link” href="@Url.Action("Contact", "Contact")">Contact</a>*@
+                                    @*<li class=”active”><a class=”active-link” href="@Url.Action("Index","Home")">Resume</a>*@
+                                
 
-                            </ul>
+                                @*<li class=”active”><a class="active-link" href="@Url.Action("Index","Home")">Resume</a>*@
+                            </ul> 
                         </nav>
                     </div>
-
                     <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
                 </div>
             </div>
 
         </header>
-
+        
 
     </div> <!-- .site-wrap -->
     <script src="~/Content/js/jquery-3.3.1.min.js"></script>
