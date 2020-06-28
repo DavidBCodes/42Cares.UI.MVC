@@ -27,11 +27,14 @@ namespace _42Cares.UI.MVC.Controllers
         {
             return View();
         }
-        public ActionResult Services()
+        public ActionResult Clinical()
         {
-            return View("Services");
+            return View("Clinical");
         }
-
+        public ActionResult Resources()
+        {
+            return View("Resources");
+        }
         [HttpPost]//HANDLES the submitted form results (or "posts them")
         public ActionResult Contact(MessageViewModel msg)
         {
@@ -80,42 +83,6 @@ namespace _42Cares.UI.MVC.Controllers
                 return View(msg);
             }
 
-        }
-
-        public ActionResult Bio()
-        {
-            return View("Bio");
-        }
-
-        [HttpGet]//Views
-        public ActionResult Teams()
-        {
-            return View();
-        }
-        [HttpGet]//Views
-        public ActionResult News()
-        {
-            return View();
-        }
-        [HttpGet]
-        public ActionResult Careers()
-        {
-            return View();
-        }
-
-        [HttpGet]//GETS the form to fill out
-
-        public ActionResult Reservation()
-        {
-            return View();
-        }
-        [HttpGet]
-        //[Authorize]
-        public ActionResult OwnerAssets()
-        {
-            ViewBag.Message = "Team Profile Pages:";
-
-            return View();
         }
     }
 }

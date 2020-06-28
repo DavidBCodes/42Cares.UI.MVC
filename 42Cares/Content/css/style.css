@@ -132,7 +132,7 @@ body:after {
 
 .site-footer {
     padding: 4em 0;
-    background: #365e80;
+    background: #1a1b1d;
 }
   @media (min-width: 768px) {
     .site-footer {
@@ -397,7 +397,7 @@ body:after {
           opacity: 1; }
 
 .site-mobile-menu {
-  width: 300px;
+  width: 200px;
   position: fixed;
   right: 0;
   z-index: 2000;
@@ -547,7 +547,7 @@ body:after {
   .sticky-wrapper .site-navbar .site-logo a {
     color: #000; }
   .sticky-wrapper .site-navbar .site-menu > li > a {
-    color: rgba(0, 0, 0, 0.7) !important; }
+    color: #fff !important; }
     .sticky-wrapper .site-navbar .site-menu > li > a:hover, .sticky-wrapper .site-navbar .site-menu > li > a.active {
       color: #000 !important; }
   .sticky-wrapper.is-sticky .site-navbar {

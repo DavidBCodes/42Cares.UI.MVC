@@ -4,8 +4,9 @@
     <link rel="shortcut icon" href="~/Content/images/favicon-16x16.png" type="image/png">
     @*<link rel="icon" href = <img src="~/Content/images/apple-touch-icon.png" typeof="image/icon"/>*@
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    @*<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">*@
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700, 900|Playfair+Display:400,900" rel="stylesheet">
     <link rel="stylesheet" href="~/Content/fonts/icomoon/style.css">
     <link rel="stylesheet" href="~/Content/css/bootstrap.min.css">
@@ -18,12 +19,16 @@
     <link rel="stylesheet" href="~/Content/fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="~/Content/css/aos.css">
     <link rel="stylesheet" href="~/Content/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="~/Content/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="~/Content/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="~/Content/images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" id="home-section">
 
@@ -49,25 +54,16 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-6 col-xl-2">
-                        <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0"><span class="text-primary"><img src="~/Content/images/favicon.ico" /></span> </a></h1>
+                        <h1 class="mb-0 site-logo"><a href="#home" class="h2 mb-0"><span class="text-primary"><img src="~/Content/images/favicon.ico" /></span> </a></h1>
                     </div>
                     <div class="col-12 col-md-10 d-none d-xl-block">
                         <nav class="site-navigation position-relative text-right" role="navigation">
                             <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                                @*<li class=”active”><a class=”active-link” href="@Url.Action("Home", "Index")">Home</a>*@
-                                <li class=”active”>@Html.ActionLink("Home", "Index", "Home", null, new { @class ="activelink" })</li>
-                                <li class=”active”>@Html.ActionLink("Clinical Team", "Clinical", "Home", null, new { @class ="activelink"})</li>
-                                <li class=”active”>@Html.ActionLink("Resource List", "Services", "Home", null, new { @class ="activelink"})</li>
-                                @*<li class=”active”>@Html.ActionLink("Home", "Index", "Home", null, new { @class ="activelink"})</li>
-                                <li class=”active”><a class=”active-link” href="@Url.Action("Home", "Clinical")">Clinical Team</a>
-                                <li class=”active”><a class=”active-link” href="@Url.Action("Home", "Services")">Resource List</a>
-                                <li class=”active”>
-                                    <a class=”active-link” href="@Url.Action("Contact", "Contact")">Contact</a>*@
-                                    @*<li class=”active”><a class=”active-link” href="@Url.Action("Index","Home")">Resume</a>*@
-                                
-
-                                @*<li class=”active”><a class="active-link" href="@Url.Action("Index","Home")">Resume</a>*@
-                            </ul> 
+                                <li class=”active”>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "activelink" })</li>
+                                <li class=”active”>@Html.ActionLink("Clinical Team", "Clinical", "Home", null, new { @class = "activelink" })</li>
+                                <li class=”active”>@Html.ActionLink("Resource List", "Resources", "Home", null, new { @class = "activelink" })</li>
+                                <li class=”active”>@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "activelink" })</li>
+                            </ul>
                         </nav>
                     </div>
                     <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
@@ -75,7 +71,7 @@
             </div>
 
         </header>
-        
+
 
     </div> <!-- .site-wrap -->
     <script src="~/Content/js/jquery-3.3.1.min.js"></script>
@@ -90,6 +86,7 @@
     <script src="~/Content/js/jquery.sticky.js"></script>
     <script src="~/Content/js/isotope.pkgd.min.js"></script>
     <script src="~/Content/js/typed.js"></script>
+    @*added for navbar*@
 
     <script>
 
@@ -119,5 +116,43 @@
     <script src="~/Content/js/main.js"></script>
     @RenderSection("scripts", required: false)
     @RenderBody()
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="footer-heading mb-4"></h2>
+                    @*<p>We are here to provide you with the support that you need to continue to live a healthy life.</p>*@
+                    <img src="~/Content/images/KCFD.jpg" />
+                </div>
+
+                <div class="col-md-3 ml-auto">
+                    <h2 class="footer-heading mb-4"></h2>
+                    <ul class="list-unstyled">
+                        <li class=”active”>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "activelink" })</li>
+                        <li class=”active”>@Html.ActionLink("Clinical Team", "Clinical", "Home", null, new { @class = "activelink" })</li>
+                        <li class=”active”>@Html.ActionLink("Resource List", "Resources", "Home", null, new { @class = "activelink" })</li>
+                        <li class=”active”>@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "activelink" })</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row pt-5 mt-5 text-left">
+                <div class="col-md-12">
+                    <div class="border-top pt-5">
+                        <p class="copyright">
+                            <small>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib and adapted by David Bell.</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </small>
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

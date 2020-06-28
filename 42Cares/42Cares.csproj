@@ -236,7 +236,6 @@
     <Content Include="Content\images\person_6.jpg" />
     <Content Include="Content\images\person_7.jpg" />
     <Content Include="Content\images\person_8.jpg" />
-    <Content Include="Content\images\signature.jpg" />
     <Content Include="Content\images\support.jpg" />
     <Content Include="Content\images\truck.jpg" />
     <Content Include="Content\js\aos.js" />
@@ -600,7 +599,8 @@
     <Content Include="_Archive\scss\_site-blocks.scss" />
     <Content Include="_Archive\scss\_site-navbar.scss" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Services.cshtml" />
+    <Content Include="Views\Home\Resources.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
