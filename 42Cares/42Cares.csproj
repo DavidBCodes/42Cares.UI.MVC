@@ -170,7 +170,6 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\MessageViewModel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -225,17 +224,10 @@
     <Content Include="Content\images\FDboots.png" />
     <Content Include="Content\images\firehat.jpg" />
     <Content Include="Content\images\hydrant.jpg" />
+    <Content Include="Content\images\KCBanner.JPG" />
     <Content Include="Content\images\KCFD.jpg" />
     <Content Include="Content\images\local42logo.png" />
     <Content Include="Content\images\opaque42.png" />
-    <Content Include="Content\images\person_1.jpg" />
-    <Content Include="Content\images\person_2.jpg" />
-    <Content Include="Content\images\person_3.jpg" />
-    <Content Include="Content\images\person_4.jpg" />
-    <Content Include="Content\images\person_5.jpg" />
-    <Content Include="Content\images\person_6.jpg" />
-    <Content Include="Content\images\person_7.jpg" />
-    <Content Include="Content\images\person_8.jpg" />
     <Content Include="Content\images\support.jpg" />
     <Content Include="Content\images\truck.jpg" />
     <Content Include="Content\js\aos.js" />
@@ -601,6 +593,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Resources.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\EAP.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

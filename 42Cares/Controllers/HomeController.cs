@@ -2,6 +2,7 @@
 using System.Net;//added for NetworkCredential
 using System.Net.Mail;//added for email
 using System.Web.Mvc;
+using System.ComponentModel.DataAnnotations;//for attributes (validation/formatting)
 
 namespace _42Cares.UI.MVC.Controllers
 {
@@ -35,6 +36,10 @@ namespace _42Cares.UI.MVC.Controllers
         {
             return View("Resources");
         }
+        public ActionResult EAP()
+        {
+            return View("EAP");
+        }
         [HttpPost]//HANDLES the submitted form results (or "posts them")
         public ActionResult Contact(MessageViewModel msg)
         {
@@ -48,7 +53,7 @@ namespace _42Cares.UI.MVC.Controllers
             //possibly good data submitted - process results by building & sending email
             string messageBody = $"You have received an email from {msg.Name}. Please respond to {msg.EmailAddress}. Their message was: <blockquote>{msg.Message}</blockquote>";
 
-            MailMessage m = new MailMessage("noreplies@DavidBellDevelops.com", "david.s.bell1976@outlook.com", "Message From 42Cares Website", messageBody);
+            MailMessage m = new MailMessage("noreplies@DavidBellDevelops.com", "ajones@iaff42.org", "Message From 42Cares Website", messageBody);
 
                 //m.IsBodyHtml = true;
                 //object emailAddress = msg.EmailAddress;
@@ -58,8 +63,8 @@ namespace _42Cares.UI.MVC.Controllers
                 {
                     var credential = new NetworkCredential
                     {
-                        UserName = "david.s.bell1976@outlook.com",  // replace with valid value
-                        Password = "46HILLcrest!"  // replace with valid value
+                        UserName = "ajones@iaff42.org",  // replace with valid value
+                        Password = "Iaff42-2019!"  // replace with valid value
                     };
                     smtp.Credentials = credential;
                     smtp.Host = "smtp-mail.outlook.com";
@@ -84,6 +89,29 @@ namespace _42Cares.UI.MVC.Controllers
             }
 
         }
+
+    }
+    public class MessageViewModel//represents a message user sends thru a form - we will email it 
+    {
+        [Required]
+        public string Name { get; set; }
+
+        [Required(ErrorMessage = "A functional email address must be provided")]
+        [Display(Name = "Email Address")]//used for dynamically genned labels
+        [DataType(DataType.EmailAddress)]
+        public string EmailAddress { get; set; }
+
+        [Required(ErrorMessage = "A functional subject must be provided")]
+        [Display(Name = "Subject")]//used for dynamically genned labels
+        [DataType(DataType.Text)]
+        public string Subject { get; set; }
+
+        [Required]
+        [UIHint("MultilineText")]//changes the input control to a multi-line text box AKA <textarea>
+        public string Message { get; set; }
+
+
+
     }
 }
 

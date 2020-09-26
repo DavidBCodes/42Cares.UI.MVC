@@ -53,14 +53,15 @@
         <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-6 col-xl-2">
-                        <h1 class="mb-0 site-logo"><a href="#home" class="h2 mb-0"><span class="text-primary"><img src="~/Content/images/favicon.ico" /></span> </a></h1>
-                    </div>
+                    @*<div class="col-6 col-xl-2">
+                        <h1 class="mb-0 site-logo"><a href="#home" class="h2 mb-0"><span class="text-primary"><img src="~/Content/images/favicon.ico" /></span> </*></h1>
+                    </div>*@
                     <div class="col-12 col-md-10 d-none d-xl-block">
-                        <nav class="site-navigation position-relative text-right" role="navigation">
+                        <nav class="site-navigation position-relative text-center" role="navigation">
                             <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                                 <li class=”active”>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "activelink" })</li>
-                                <li class=”active”>@Html.ActionLink("Clinical Team", "Clinical", "Home", null, new { @class = "activelink" })</li>
+                                <li class=”active”>@Html.ActionLink("Clinical", "Clinical", "Home", null, new { @class = "activelink" })</li>
+                                <li class=”active”>@Html.ActionLink("EAP", "EAP", "Home", null, new { @class = "activelink" })</li>
                                 <li class=”active”>@Html.ActionLink("Resource List", "Resources", "Home", null, new { @class = "activelink" })</li>
                                 <li class=”active”>@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "activelink" })</li>
                             </ul>
@@ -129,7 +130,8 @@
                     <h2 class="footer-heading mb-4"></h2>
                     <ul class="list-unstyled">
                         <li class=”active”>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "activelink" })</li>
-                        <li class=”active”>@Html.ActionLink("Clinical Team", "Clinical", "Home", null, new { @class = "activelink" })</li>
+                        <li class=”active”>@Html.ActionLink("Clinical", "Clinical", "Home", null, new { @class = "activelink" })</li>
+                        <li class=”active”>@Html.ActionLink("EAP", "EAP", "Home", null, new { @class = "activelink" })</li>
                         <li class=”active”>@Html.ActionLink("Resource List", "Resources", "Home", null, new { @class = "activelink" })</li>
                         <li class=”active”>@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "activelink" })</li>
                     </ul>
