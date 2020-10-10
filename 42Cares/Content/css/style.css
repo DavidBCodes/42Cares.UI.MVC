@@ -23,6 +23,7 @@ body {
     color: #191717;
     font-weight: 400;
     font-size: 1rem;
+    font-size: 18px;
 }
 
 ::-moz-selection {
@@ -2016,4 +2017,7 @@ img {
     nav a.pull-right {
         display: inline-block;
     }
+}
+body {
+    font-family: 'Times New Roman', Times, serif
 }

@@ -3,48 +3,66 @@
 @using (Html.BeginForm("Contact", "Home", FormMethod.Post))
 {
     @Html.AntiForgeryToken()
+    <style>
+        img {
+            float: right;
+            max-height: 500px;
+            overflow: auto;
+        }
 
-    <section class="site-blocks-cover overflow-hidden">
-        <div class="container">
-            <div class="row mb-5 justify-content-center">
-                <div class="col-md-7 align-self-center">
-                    <h1 class="text-white-opacity-05">Contact for Assistance</h1>
+        .img2 {
+            float: left;
+        }
 
-                    <style>
-                        div.polaroid {
-                            width: 100%;
-                            background-color: white;
-                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                            margin-bottom: 25px;
-                        }
+        div.container {
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
 
-                        div.container {
-                            text-align: center;
-                            padding: 10px 20px;
-                            font-size: 18px;
-                        }
+        img {
+            border: 5px solid #555;
+        }
+    </style>
+    <section class="responsive">
+        <div class="row mb-5">
 
-                        textarea {
-                            resize: none;
-                            max-height: 1200px;
-                            max-width: 1000px;
-                        }
-                    </style>
-                </div>
-            </div>
+            <img src="~/Content/images/KCFDcropresize2.png" class="responsive" />
+
         </div>
     </section>
-    <section>
-        <div class="polaroid">
-            <div class="row mb-5 justify-content-center">
 
-            </div>
-        </div>
-    </section>
+    <style>
+        div.polaroid {
+            width: 100%;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 25px;
+        }
+
+        div.container {
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+
+        textarea {
+            resize: none;
+            max-height: 1200px;
+            max-width: 1000px;
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif
+        }
+    </style>
+
+
     <div class="site-section bg-light" id="contact-section">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
+                    <h1>Contact for Assistance</h1>
+
                 </div>
             </div>
             <div class="row mb-5">
@@ -134,34 +152,34 @@
             </div>
         </div>
     </div>
- }
-        @*<div class="row">
-                <div class="col-lg-12 mb-5">
-                    <form action="#" method="post">
-                        <div class="form-group row">
-                            <div class="col-md-6 mb-3 mb-md-0">
-                                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @placeholder ="First name" } })
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Last name">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-md-12">
-                                <input type="text" class="form-control" placeholder="Email address">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-md-12">
-                                <textarea name="" id="" class="form-control" placeholder="Enter your message." cols="30" rows="10"></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-md-6 center">
-                                <input type="submit" class="btn btn-block btn-primary text-white py-2 px-5" value="Send Message">
-                            </div>
-                        </div>
-                    </form>
+}
+@*<div class="row">
+        <div class="col-lg-12 mb-5">
+            <form action="#" method="post">
+                <div class="form-group row">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @placeholder ="First name" } })
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Last name">
+                    </div>
                 </div>
+                <div class="form-group row">
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" placeholder="Email address">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-12">
+                        <textarea name="" id="" class="form-control" placeholder="Enter your message." cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-6 center">
+                        <input type="submit" class="btn btn-block btn-primary text-white py-2 px-5" value="Send Message">
+                    </div>
+                </div>
+            </form>
+        </div>
 
-            </div>*@
+    </div>*@

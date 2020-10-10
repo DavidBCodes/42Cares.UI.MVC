@@ -4,7 +4,29 @@
 @model _42Cares.UI.MVC.Controllers.MessageViewModel
 @using (Html.BeginForm("Contact", "Home", FormMethod.Post))
 {
+    <style>
+        .img3 {
+            border-radius: 50%;
+        }
 
+        .img4 {
+            float: left;
+        }
+
+        img {
+            border: 5px solid #052c42;
+        }
+
+        body {
+            font-size: 18px;
+        }
+        .ml2{
+            font-family: 'Times New Roman', Times, serif, Times, serif;
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif
+        }
+    </style>
     <section class="site-blocks-cover overflow-hidden">
         <div class="container">
             <div class="row">
@@ -38,63 +60,31 @@
         </div>
 
     </section>
-   
+
     <section class="site-section bg-light" id="training-section">
         <div class="container">
             <div class="row mb-5 justify-content-center">
-                <div class="col-md-7 text-center">
+                <div class="col-md-7 text-left">
                     <h2 class="text-black">42 C.A.R.E.S Mission Statement</h2>
                     <p style="font-size: 18px">The mission of 42 C.A.R.E.S. (Cares, Assessment, Resilience, Education, Support) is to proactively provide care/support that assist members and their families with managing behavioral health concerns in order to protect and promote their overall health and well-being.</p>
                 </div>
-                <div style="text-align: right"><img src="~/Content/images/42logoMD.png" width="250" /></div>
-                <section class="site-section" id="about-section">
-                    <div class="container">
-                        <div class="row">
-                            @*<div class="col-12 text-center">
-                                <h2 class="text-black">What is 42 C.A.R.E.S?</h2>
-                            </div>*@
-                            <div>
-                                <p style="font-size: 18px">The IAFF has made behavioral health a priority for fire and emergency services and <bold>Local 42</bold> has followed in their footsteps. We now have a clinician available 24/7 to support members and their families as a behavioral health liaison for referrals, crisis intervention and general behavioral health concerns.</p>
-                                <p style="font-size: 18px">42 C.A.R.E.S. (Counseling, Assessments, Resilience & Education) was established after the IAFF and Local 42 recognized that maintaining first responder behavioral health is an essential priority. Local 42 created the is resource to have a dedicated clinician who provides referrals, crisis intervention, peer support connections and general behavioral health support for members and their families. </p>
-                              
-                            </div>
-                            <div class="center">
+                <div style="text-align: center"><img class="img3" src="~/Content/images/42logoMD.png" style="width:200px" /></div>
 
-                                @*<img src="~/Content/images/42logoMD.png" alt="logo" class="center">*@
-                            </div>
+                <div class="row mb-5 justify-content-center">
+                    <div class="col-md-7 text-left">
+                        <div style="text-align: center"><img class="img4" src="~/Content/images/flagkcfd.png" style="width:200px" /></div>
+                        
+                        
+                            <p style="font-size: 18px">The IAFF has made behavioral health a priority for fire and emergency services and <strong>Local 42</strong> has followed in their footsteps. We now have a clinician available 24/7 to support members and their families as a behavioral health liaison for referrals, crisis intervention and general behavioral health concerns.</p>
+                            <p style="font-size: 18px">42 C.A.R.E.S. (Counseling, Assessments, Resilience & Education) was established after the IAFF and Local 42 recognized that maintaining first responder behavioral health is an essential priority. Local 42 created the is resource to have a dedicated clinician who provides referrals, crisis intervention, peer support connections and general behavioral health support for members and their families. </p>
                         </div>
                     </div>
-                </section>
+                </div>
             </div>
-            @*<div class="nonloop-block-13 owl-style owl-carousel">
-                <div class="training">
-                    <figure class="mb-4"><img src="~/Content/images/coach_1_sm.jpg" alt="Free website template by Free-Template.co" class="img-fluid"></figure>
-                    <h3 class="text-black mb-3">Therapeutic Services</h3>
-                    <p>Alicia utilizes several therapeutic modalities to include Somatic Experiencing™ (SE®), EMDR, DBT, ACT. She has extensive experience in working with veterans, first responders and their families. Alicia is passionate about supporting people to better understand their normal human responses to circumstances that can feel abnormal.</p>
-                </div>
-                <div class="training">
-                    <figure class="mb-4"><img src="~/Content/images/coach_2_sm.jpg" alt="Free website template by Free-Template.co" class="img-fluid"></figure>
-                    <h3 class="text-black mb-3">Peer Support</h3>
-                    <p>Local 42 provides a Peer Support Program made up of fire service and EMS members just like you. Peer Support provides an opportunity to talk confidentially with someone who understands what you are experiencing because they have also been there..</p>
-                </div>
-                <div class="training">
-                    <figure class="mb-4"><img src="~/Content/images/coach_3_sm.jpg" alt="Free website template by Free-Template.co" class="img-fluid"></figure>
-                    <h3 class="text-black mb-3">Behavioral Health Referrals</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                </div>
-                <div class="training">
-                    <figure class="mb-4"><img src="~/Content/images/coach_1_sm.jpg" alt="Free website template by Free-Template.co" class="img-fluid"></figure>
-                    <h3 class="text-black mb-3">7 Free Counseling Visits</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                </div>
-                <div class="training">
-                    <figure class="mb-4"><img src="~/Content/images/coach_2_sm.jpg" alt="Free website template by Free-Template.co" class="img-fluid"></figure>
-                    <h3 class="text-black mb-3">Our Lead Clinician</h3>
-                    <p>Alicia (AJ) Jones Pittman, LSCSW, LCSW, LMAC, SEP is the Behavioral Program Director for 42C.A.R.E.S. AJ earned both her undergraduate degree in psychology & Master of Social Work (MSW) degree from the University of Kansas. She is a psychotherapist who specializes in resiliency, trauma and addiction.  </p>
-                </div>
-            </div>*@
-        </div>
+        
     </section>
+
+
     <section class="site-section" id="services-section">
         <div class="container">
             <div class="row mb-5 justify-content-center">
@@ -151,5 +141,5 @@
 
     </section>
 
-  
+
 }
