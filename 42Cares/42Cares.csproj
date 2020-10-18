@@ -208,6 +208,7 @@
     <Content Include="Content\images\42logoMD.png" />
     <Content Include="Content\images\42logoresize.png" />
     <Content Include="Content\images\aj.jpeg" />
+    <Content Include="Content\images\ajnoborder.png" />
     <Content Include="Content\images\ajsmall.png" />
     <Content Include="Content\images\android-chrome-192x192.png" />
     <Content Include="Content\images\android-chrome-512x512.png" />
