@@ -20,6 +20,12 @@
     <link rel="stylesheet" href="~/Content/css/aos.css">
     <link rel="stylesheet" href="~/Content/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="~/Content/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="~/Content/images/favicon-32x32.png">
@@ -73,28 +79,30 @@
         </div>
 
 
-        <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+        <header class="site-navbar site-navbar-target" style="opacity:80%" role="banner">
             <div class="container">
                 <div class="row align-items-center">
                     @*<div class="col-6 col-xl-2">
-                        <h1 class="mb-0 site-logo"><a href="#home" class="h2 mb-0"><span class="text-primary"><img src="~/Content/images/favicon.ico" /></span> </*></h1>
-                    </div>*@
-                    <div class="col-12 col-md-10 d-none d-xl-block">
-                        <nav class="site-navigation position-relative text-center" role="navigation">
-                            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                                <li class=”active”>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "activelink" })</li>
-                                <li class=”active”>@Html.ActionLink("Clinical", "Clinical", "Home", null, new { @class = "activelink" })</li>
-                                <li class=”active”>@Html.ActionLink("EAP", "EAP", "Home", null, new { @class = "activelink" })</li>
-                                <li class=”active”>@Html.ActionLink("Resource List", "Resources", "Home", null, new { @class = "activelink" })</li>
-                                <li class=”active”>@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "activelink" })</li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
-                </div>
-            </div>
+                            <h1 class="mb-0 site-logo"><a href="#home" class="h2 mb-0"><span class="text-primary"><img src="~/Content/images/favicon.ico" /></span> </*></h1>
+                        </div>*@
+                    @*<div class="col-12 col-md-10 d-none d-xl-block">
+                        <div class="container-fluid" style="max-width: none">*@
 
-        </header>
+                    <nav class="site-navigation position-relative; navbar navbar-inverse" role="navigation">
+                        <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                            <li class=”active”>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "activelink" })</li>
+                            <li class=”active”>@Html.ActionLink("Clinical", "Clinical", "Home", null, new { @class = "activelink" })</li>
+                            <li class=”active”>@Html.ActionLink("EAP", "EAP", "Home", null, new { @class = "activelink" })</li>
+                            <li class=”active”>@Html.ActionLink("Resource List", "Resources", "Home", null, new { @class = "activelink" })</li>
+                            <li class=”active”>@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "activelink" })</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+            </div>
+    </div>
+    </div>
+    </header>
 
 
     </div> <!-- .site-wrap -->
@@ -110,10 +118,8 @@
     <script src="~/Content/js/jquery.sticky.js"></script>
     <script src="~/Content/js/isotope.pkgd.min.js"></script>
     <script src="~/Content/js/typed.js"></script>
+
    
-
-    
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="~/Content/js/main.js"></script>
     @RenderSection("scripts", required: false)
@@ -127,7 +133,7 @@
                 </div>
                 <div class="col-md-4">
                     <h2 class="footer-heading mb-4"></h2>
-                    <img class="img6" style="max-height:220px; margin-left:25px" src="~/Content/images/42logoMD.png"  />
+                    <img class="img6" style="max-height:220px; margin-left:25px" src="~/Content/images/42logoMD.png" />
                 </div>
                 <div class="col-md-4 ml-auto">
                     <h2 class="footer-heading mb-4"></h2>
@@ -140,6 +146,7 @@
                     </ul>
                 </div>
             </div>
+            
             <div class="row pt-5 mt-5 text-left">
                 <div class="col-md-12">
                     <div class="border-top pt-5">

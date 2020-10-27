@@ -438,6 +438,7 @@
     <Content Include="Content\scss\bootstrap\vendor\_rfs.scss" />
     <Content Include="Content\scss\style.scss" />
     <Content Include="Content\images\site.webmanifest" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
