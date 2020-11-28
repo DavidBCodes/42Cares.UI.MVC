@@ -4,7 +4,7 @@
     <link rel="shortcut icon" href="~/Content/images/favicon-16x16.png" type="image/png">
     @*<link rel="icon" href = <img src="~/Content/images/apple-touch-icon.png" typeof="image/icon"/>*@
     <meta charset="utf-8">
-    @*<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">*@
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700, 900|Playfair+Display:400,900" rel="stylesheet">
@@ -36,28 +36,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-    @* Added for js affect *@
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script>
-        // Wrap every letter in a span
-        var textWrapper = document.querySelector('.ml3');
-        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-        anime.timeline({ loop: true })
-            .add({
-                targets: '.ml3 .letter',
-                opacity: [0, 1],
-                easing: "easeInOutQuad",
-                duration: 2250,
-                delay: (el, i) => 150 * (i + 1)
-            }).add({
-                targets: '.ml3',
-                opacity: 0,
-                duration: 1000,
-                easing: "easeOutExpo",
-                delay: 1000
-            });
-    </script>
+  
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" id="home-section">
 
@@ -83,10 +62,10 @@
             <div class="container">
                 <div class="row align-items-center">
                     @*<div class="col-6 col-xl-2">
-                            <h1 class="mb-0 site-logo"><a href="#home" class="h2 mb-0"><span class="text-primary"><img src="~/Content/images/favicon.ico" /></span> </*></h1>
-                        </div>*@
+                <h1 class="mb-0 site-logo"><a href="#home" class="h2 mb-0"><span class="text-primary"><img src="~/Content/images/favicon.ico" /></span> </*></h1>
+            </div>*@
                     @*<div class="col-12 col-md-10 d-none d-xl-block">
-                        <div class="container-fluid" style="max-width: none">*@
+            <div class="container-fluid" style="max-width: none">*@
 
                     <nav class="site-navigation position-relative; navbar navbar-inverse" role="navigation">
                         <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
@@ -98,14 +77,16 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
             </div>
+        </header>
+        <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
     </div>
-    </div>
-    </header>
+    
+    
+    
 
 
-    </div> <!-- .site-wrap -->
+    <!-- .site-wrap -->
     <script src="~/Content/js/jquery-3.3.1.min.js"></script>
     <script src="~/Content/js/jquery-ui.js"></script>
     <script src="~/Content/js/popper.min.js"></script>
@@ -120,7 +101,7 @@
     <script src="~/Content/js/typed.js"></script>
 
    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    @*<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>*@
     <script src="~/Content/js/main.js"></script>
     @RenderSection("scripts", required: false)
     @RenderBody()
@@ -131,13 +112,10 @@
                     <h2 class="footer-heading mb-4"></h2>
                     <img class="img6" style="max-height:220px" src="~/Content/images/KCFD.jpg" />
                 </div>
+
                 <div class="col-md-4">
-                    <h2 class="footer-heading mb-4"></h2>
-                    <img class="img6" style="max-height:220px; margin-left:25px" src="~/Content/images/42logoMD.png" />
-                </div>
-                <div class="col-md-4 ml-auto">
-                    <h2 class="footer-heading mb-4"></h2>
-                    <ul class="list-unstyled">
+                    <h2 class="footer-heading mb-4" style="align-content: center !important" ></h2>
+                    <ul class="list-unstyled" style="text-align: center">
                         <li class=”active”>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "activelink" })</li>
                         <li class=”active”>@Html.ActionLink("Clinical", "Clinical", "Home", null, new { @class = "activelink" })</li>
                         <li class=”active”>@Html.ActionLink("EAP", "EAP", "Home", null, new { @class = "activelink" })</li>
@@ -145,16 +123,20 @@
                         <li class=”active”>@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "activelink" })</li>
                     </ul>
                 </div>
+                <div class="col-md-4">
+                    <h2 class="footer-heading mb-4"></h2>
+                    <img class="img6" style="max-height:220px; margin-left:25px" src="~/Content/images/42logoMD.png" />
+                </div>
             </div>
             
-            <div class="row pt-5 mt-5 text-left">
+            <div class="row pt-5 mt-5 text-center">
                 <div class="col-md-12">
                     <div class="border-top pt-5">
                         <p class="copyright">
                             <small>
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                 Copyright &copy;
-                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib and adapted by David Bell.</a>
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" style="color: gray">Colorlib and adapted by David Bell.</a>
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             </small>
                         </p>

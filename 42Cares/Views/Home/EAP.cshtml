@@ -40,8 +40,10 @@
         padding: 10px 15px;
         margin-bottom: -1px;
         margin-right: 15px;
-        background-color: #e4d6f5;
+        background-color: #a6a7a7;
         border: 1px solid #000;
+        
+       
     }
 
     /* The Modal (background) */
@@ -61,7 +63,7 @@
 
     /* Modal Content */
     .modal-content {
-        background-color: #aaaaaa;
+        background-color: ##e5e8e1;
         margin: auto;
         padding: 20px;
         border: 1px solid #888;
@@ -82,7 +84,7 @@
             color: #000;
             text-decoration: none;
             cursor: pointer;
-        }98*
+        }
 </style>
 
 @*<section>
@@ -105,88 +107,89 @@
 
                 </div>
             </section>
-            <!-- Button to Open the Modal -->
-            <div class="col-md-7 text-center">
-                <h2 style="color: gold">EAP Approved Clinicians</h2>
+            
 
-                <!-- Trigger/Open The Modal -->
-                <button id="myBtn" style="background-color: firebrick">! Click for important EAP Information</button>
 
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
+                <div class="col-md-7 text-center">
+                    <h2 style="color: gold">EAP Approved Clinicians and Resources</h2>
+                    <p style="color: gold">There is more than just clinical support (counseling) available through our EAP resources. You and/or your family may need additional supports, including 24/7/365 over the phone support, coaching, webinars for managing behavioral health needs, financial or legal expert help, plan for wills and/or additional support for life needs. <br />Please reach out to AJ (our clinician) for the password to the website: <a href="http://www.kcpps.org/new-patient-request.html" target="_blank" style="color:aliceblue">eap.ndbh.com</a></p>
 
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <p><em><strong>Please Note: These clinicians are a part of the employee assistance program (EAP). You and your family may have 7 free visits with a counselor/therapist and this service is only for KCFD members (at this time). Please call our EAP number (877)281-3804, identify yourself as with 42CARES/KCFD so you may receive preauthorization.  You will need to know which clinician you are meeting with prior to requesting a preauthorization. </strong></em></p>
-                    </div>
+                    <!-- Trigger/Open The Modal -->
+                    <button id="myBtn" style="background-color: firebrick">! Click for further important EAP Information !</button>
 
-                </div>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
 
-                <script>
-                    // Get the modal
-                    var modal = document.getElementById("myModal");
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p><em><strong>Please Note: These clinicians listed below are a part of the employee assistance program (EAP). You and your family may have 7 free visits with a counselor/therapist and this service is only for KCFD members (at this time). Please call our EAP number (877)281-3804, identify yourself as with 42CARES/KCFD so you may receive preauthorization.  You will need to know which clinician you are meeting with prior to requesting a preauthorization. </strong></em></p>
+                        </div>
+                        
+                        </div>
+                    <br />
+                        <script>
+                            // Get the modal
+                            var modal = document.getElementById("myModal");
 
-                    // Get the button that opens the modal
-                    var btn = document.getElementById("myBtn");
+                            // Get the button that opens the modal
+                            var btn = document.getElementById("myBtn");
 
-                    // Get the <span> element that closes the modal
-                    var span = document.getElementsByClassName("close")[0];
+                            // Get the <span> element that closes the modal
+                            var span = document.getElementsByClassName("close")[0];
 
-                    // When the user clicks the button, open the modal
-                    btn.onclick = function () {
-                        modal.style.display = "block";
-                    }
+                            // When the user clicks the button, open the modal
+                            btn.onclick = function () {
+                                modal.style.display = "block";
+                            }
 
-                    // When the user clicks on <span> (x), close the modal
-                    span.onclick = function () {
-                        modal.style.display = "none";
-                    }
+                            // When the user clicks on <span> (x), close the modal
+                            span.onclick = function () {
+                                modal.style.display = "none";
+                            }
 
-                    // When the user clicks anywhere outside of the modal, close it
-                    window.onclick = function (event) {
-                        if (event.target == modal) {
-                            modal.style.display = "none";
-                        }
-                    }
-                </script>
-                @* original content *@
-                @*<div class="col-md-7 text-center">
-                    <p><em><strong>Please Note: These clinicians are a part of the employee assistance program (EAP). You and your family may have 7 free visits with a counselor/therapist and this service is only for KCFD members (at this time). Please call our EAP number (877)281-3804, identify yourself as with 42CARES/KCFD so you may receive preauthorization.  You will need to know which clinician you are meeting with prior to requesting a preauthorization. </strong></em></p>
-                    <br />*@
+                            // When the user clicks anywhere outside of the modal, close it
+                            window.onclick = function (event) {
+                                if (event.target == modal) {
+                                    modal.style.display = "none";
+                                }
+                            }
+                        </script>
 
-                    @*<p style="font-size: 18px">
-                    <img src="~/Content/images/firehat.jpg" alt="Alicia Jones" style="width:350px; height:315px; margin-right:15px;" class="responsive" />
-                <p>*@
 
-                    <h3 style="color:gold"><strong>Overland Park, KS</strong></h3>
+                        @* original content *@
+                        @*<div class="col-md-7 text-center">
+        <p><em><strong>Please Note: These clinicians are a part of the employee assistance program (EAP). You and your family may have 7 free visits with a counselor/therapist and this service is only for KCFD members (at this time). Please call our EAP number (877)281-3804, identify yourself as with 42CARES/KCFD so you may receive preauthorization.  You will need to know which clinician you are meeting with prior to requesting a preauthorization. </strong></em></p>
+        <br />*@
 
-                    <ul class="list-group">
-                        <li class="list-group-item list-group-item-secondary-action" style="color: blue">
-                            <span class="glyphicon glyphicon-user"></span>
-                            Gaal, Erin - <a href="https://www.psychologytoday.com/us/therapists/erin-l-gaal-overland-park-ks/480283" target="_blank">Click here for a link to this therapists website</a>
-                        </li>
-                    </ul>
+                        @*<p style="font-size: 18px">
+            <img src="~/Content/images/firehat.jpg" alt="Alicia Jones" style="width:350px; height:315px; margin-right:15px;" class="responsive" />
+        <p>*@
 
-                    <p>
+
                         <h3 style="color:gold"><strong>Independence, MO</strong></h3>
                         <ul class="list-group">
-                            <li class="list-group-item list-group-item-secondary" style="color: blue"><span class="glyphicon glyphicon-user"></span>
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
                                 Kervin, Margaux - <a href="http://www.kcpps.org/new-patient-request.html" target="_blank">Click here for a link to this therapists website</a>
                             </li>
-                            <li class="list-group-item list-group-item-secondary" style="color: blue"><span class="glyphicon glyphicon-user"></span>
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
 
                                 Richerson, Lauren - <a href="http://www.kcpps.org/new-patient-request.html" target="_blank">Click here for a link to this therapists website</a>
                             </li>
-                            <li class="list-group-item list-group-item-secondary" style="color: blue"><span class="glyphicon glyphicon-user"></span>
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
 
                                 Ezechiels, Watt - <a href="http://www.kcpps.org/new-patient-request.html" target="_blank">Click here for a link to this therapists website</a>
                             </li>
-                            <li class="list-group-item list-group-item-secondary" style="color: blue"><span class="glyphicon glyphicon-user"></span>
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
 
                                 May, Adam - <a href="http://www.kcpps.org/new-patient-request.html" target="_blank">Click here for a link to this therapists website</a>
                             </li>
-                            <li class="list-group-item list-group-item-secondary" style="color: blue"><span class="glyphicon glyphicon-user"></span>
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
 
                                 Garner, Brian - <a href="http://www.kcpps.org/new-patient-request.html" target="_blank">Click here for a link to this therapists website</a>
                             </li>
@@ -197,43 +200,142 @@
 
 
                         @*<p style="font-size: 18px">
-                        <img class="img2" src="~/Content/images/FDboots.png" alt="Alicia Jones" style="width:400px; height:400px; margin-right:20px;" /><br />
-                    <p>*@
+            <img class="img2" src="~/Content/images/FDboots.png" alt="Alicia Jones" style="width:400px; height:400px; margin-right:20px;" /><br />
+        <p>*@
                         <h3 style="color:gold"><strong>North Kansas City, MO</strong></h3>
-                    </p>
-                    <ul class="list-group">
-                        <li class="list-group-item list-group-item-secondary" style="color: blue"><span class="glyphicon glyphicon-user"></span>
-                            Kersey, Cleveland - <a href="https://www.metiscounseling.com/about-us/" target="_blank">Click here for a link to this therapists website</a>
-                        </li>
-                        <li class="list-group-item list-group-item-secondary" style="color: blue"><span class="glyphicon glyphicon-user"></span>
-                            Kuykendall, Mark (John) - <a href="https://acornkc.com" target="_blank">Click here for a link to this therapists website</a>
-                        </li>
-                        <li class="list-group-item list-group-item-secondary" style="color: blue"><span class="glyphicon glyphicon-user"></span>
-                            Lee, Sunny - <a href="https://www.metiscounseling.com/about-us/" target="_blank">Click here for a link to this therapists website</a>
-                        </li>
-                        <li class="list-group-item list-group-item-secondary" style="color: blue"><span class="glyphicon glyphicon-user"></span>
-                            Rosenbaum, Amanda “Mandy” - <a href="https://www.strategictraumarecoveryllc.com/clinicians.html" target="_blank">Click here for a link to this therapists website</a>
-                        </li>
-                        <li class="list-group-item list-group-item-secondary" style="color: blue"><span class="glyphicon glyphicon-user"></span>
-                            Wilper, Sara - <a href="https://www.psychologytoday.com/us/therapists/sara-wilper-kansas-city-mo/216702" target="_blank">Click here for a link to this therapists website</a>
-                        </li>
-                    </ul>
-                    <h3 style="color:gold"><strong>South Kansas City, MO</strong></h3>
-                    <ul class="list-group">
+                        </p>
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Kersey, Cleveland - <a href="https://www.metiscounseling.com/about-us/" target="_blank">Click here for a link to this therapists website</a>
+                            </li>
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Kuykendall, Mark - <a href="https://acornkc.com" target="_blank">Click here for a link to this therapists website</a>
+                            </li>
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Lee, Sunny - <a href="https://www.metiscounseling.com/about-us/" target="_blank">Click here for a link to this therapists website</a>
+                            </li>
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Rosenbaum, Amanda “Mandy” - <a href="https://www.strategictraumarecoveryllc.com/clinicians.html" target="_blank">Click here for a link to this therapists website</a>
+                            </li>
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Wilper, Sara - <a href="https://www.psychologytoday.com/us/therapists/sara-wilper-kansas-city-mo/216702" target="_blank">Click here for a link to this therapists website</a>
+                            </li>
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Strothers, David - <a href="https://www.facebook.com/ValiantTherapeuticServices/" target="_blank">Click here for a link to this therapists website</a>
+                            </li>
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Rich, Nicole - <a href="https://www.metiscounseling.com/about-us/" target="_blank">Click here for a link to this therapists website</a>
+                            </li>
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Willoughby Green, Rachel - <a href="https://www.psychologytoday.com/us/therapists/rachel-willoughby-greene-kansas-city-mo/330445" target="_blank">Click here for a link to this therapists website</a>
+                            </li>
+                        </ul>
+                        <h3 style="color:gold"><strong>South Kansas City, MO</strong></h3>
+                        <ul class="list-group">
 
-                        <li class="list-group-item list-group-item-secondary" style="color: blue"><span class="glyphicon glyphicon-user"></span>
-                            Johnson, Josh	- <a href="https://joshjohnsoncounseling.com/" target="_blank">Click here for a link to this therapists website</a>
-                        </li>
-                        
-                        <li class="list-group-item list-group-item-secondary" style="color: blue"><span class="glyphicon glyphicon-user"></span>
-                            Rogers, Burt - <a href="https://openpathcollective.org/clinicians/burton-rogers-2/" target="_blank">Click here for a link to this therapists website</a>
-                        </li>
-                        <li class="list-group-item list-group-item-secondary" style="color: blue"><span class="glyphicon glyphicon-user"></span>
-                            Peterson, Carol - <a href="https://www.healthcare4ppl.com/physician/missouri/kansas-city/carol-b-peterson-1639381155.html" target="_blank">Click here for a link to this therapists website</a>
-                        </li>
-                       
-                    </ul>
-                </div>
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Johnson, Josh	- <a href="https://joshjohnsoncounseling.com/" target="_blank">Click here for a link to this therapists website</a>
+                            </li>
+
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Rogers, Burt - <a href="https://openpathcollective.org/clinicians/burton-rogers-2/" target="_blank">Click here for a link to this therapists website</a>
+                            </li>
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Peterson, Carol - <a href="https://www.healthcare4ppl.com/physician/missouri/kansas-city/carol-b-peterson-1639381155.html" target="_blank">Click here for a link to this therapists website</a>
+                            </li>
+
+                        </ul>
+                        <h3 style="color:gold"><strong>18th and Vine, Kansas City, MO</strong></h3>
+                        <ul class="list-group">
+
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Carr, Kortney	- <a href="http://www.alifesjourneykc.org/therapists.html" target="_blank">Click here for a link to this therapists website</a>
+                            </li>
+
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Jones, Alicia - <a href="http://www.alifesjourneykc.org/therapists.html" target="_blank">Click here for a link to this therapists website</a>
+                            </li>
+                        </ul>
+                        <h3 style="color:gold"><strong>Liberty, MO</strong></h3>
+                        <ul class="list-group">
+
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Brown, Danyell	- <a href="https://www.clinicalcounselingassociates.org/therapists" target="_blank">Click here for a link to this therapists website</a>
+                            </li>
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Clifton, Marie - <a href="https://www.clinicalcounselingassociates.org/therapists" target="_blank">Click here for a link to this therapists website</a>
+                            </li>
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Slack, Sheena - <a href="https://www.clinicalcounselingassociates.org/therapists" target="_blank">Click here for a link to this therapists website</a>
+                            </li>
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Robinson, Jill - <a href="https://www.clinicalcounselingassociates.org/therapists" target="_blank">Click here for a link to this therapists website</a>
+                            </li>
+                        </ul>
+                        <h3 style="color:gold"><strong>Chillicothe, MO- (To include surrounding areas)</strong></h3>
+                        <ul class="list-group">
+
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Carder, Grace	- <a href="https://www.cornerstreetcounseling.com" target="_blank">Click here for a link to this therapists website</a>
+                            </li>
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Wolf, Monica - <a href="https://www.soloasismindbodyspirit.com/mental-health-providers-1" target="_blank">Click here for a link to this therapists website</a>
+                            </li>
+                        </ul>
+                        <h3 style="color:gold"><strong>Lee's Summit, MO</strong></h3>
+                        <ul class="list-group">
+
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Cobb, Chris	- <a href=" https://www.psychproskc.com/our-staff.html" target="_blank">Click here for a link to this therapists website</a>
+                            </li>
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Mckay, Foss - <a href=" https://www.psychproskc.com/our-staff.html" target="_blank">Click here for a link to this therapists website</a>
+                            </li>
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Keilbey, Kali - <a href=" https://www.psychproskc.com/our-staff.html" target="_blank">Click here for a link to this therapists website</a>
+                            </li>
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Effertz, Jon - <a href=" https://www.psychproskc.com/our-staff.html" target="_blank">Click here for a link to this therapists website</a>
+                            </li>
+                            <li class="list-group-item list-group-item-secondary" style="color: blue">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Perkins, Katie - <a href=" https://www.psychproskc.com/our-staff.html" target="_blank">Click here for a link to this therapists website</a>
+                            </li>
+                            <h3 style="color:gold"><strong>Overland Park, KS</strong></h3>
+
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-secondary-action" style="color: blue">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    Gaal, Erin - <a href="https://www.psychologytoday.com/us/therapists/erin-l-gaal-overland-park-ks/480283" target="_blank">Click here for a link to this therapists website</a>
+                                </li>
+                            </ul>
+
+                            <p>
+                        </ul>
+                    </div>
             </div>
         </div>
 </section>

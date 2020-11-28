@@ -3,69 +3,27 @@
 @using (Html.BeginForm("Contact", "Home", FormMethod.Post))
 {
     @Html.AntiForgeryToken()
+
     <style>
         img {
             float: right;
             max-height: 500px;
             overflow: auto;
-        }
-        .text-center{
-            color:gold;
-            
-        }
-        .img2 {
-            float: left;
-            
-        }
-
-        div.container {
-            text-align: center;
-            padding: 10px 20px;
-            font-size: 18px;
-        }
-
-        img {
             border: 5px solid #FFD700;
         }
-        .contact-section {
-            font-family: 'Times New Roman', Times, serif background-color: #2ee7ff;
-            background: -webkit-linear-gradient(top right, #525994, #000000);
-            background: -moz-linear-gradient(top right, #525994, #000000);
-            background: linear-gradient(to bottom left, #525994, #000000);
-            background-attachment: fixed;
-            background-size: cover;
-        }
-        .mb-4{
-            color:white;
-        }
-    </style>
-    <section class="responsive">
-        <div class="row mb-5">
 
-            <img src="~/Content/images/KCFDcropresize2.png" class="responsive" />
-
-        </div>
-    </section>
-
-    <style>
-        div.polaroid {
-            width: 100%;
-            background-color: white;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            margin-bottom: 25px;
+        .img2 {
+            float: right;
+            border: 5px solid #FFD700;
+            max-height: 500px;
         }
 
         div.container {
             text-align: center;
-            padding: 10px 20px;
+            /*padding: 10px 20px;*/
             font-size: 18px;
         }
 
-        textarea {
-            resize: none;
-            max-height: 1200px;
-            max-width: 1000px;
-        }
         body {
             font-family: 'Times New Roman', Times, serif background-color: #2ee7ff;
             background: -webkit-linear-gradient(top right, #525994, #000000);
@@ -73,136 +31,106 @@
             background: linear-gradient(to bottom left, #525994, #000000);
             background-attachment: fixed;
             background-size: cover;
-            color: azure;
-            font-size: 18px;
+            color: white;
         }
-        
     </style>
 
+    @*<section class="site-blocks-cover overflow-hidden">
+            <div class="container">
+                <div class="row mb-5 justify-content-center">
+                    <div class="col-md-7 align-self-center">
+                        <style>
+                            div.polaroid {
+                                width: 100%;
+                                background-color: white;
+                                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                                margin-bottom: 25px;
+                            }
 
-    @*<div class="site-section bg-light" id="contact-section">
-        <div class="container">*@
-    <div class="row">
-        <div class="col-12 text-center mb-5">
-            <h1 style="color: gold">Please Contact for Further Assistance</h1>
-
-
-            <div class="col-12 text-center mb-5">
-                <div class="col-12 text-center mb-5">
-                    <p class="mb-0 font-weight-bold" style="color: gold" >Address:</p>
-                    <p class="mb-4" >6320 Manchester Ave, Suite 41C, Kansas City, MO 64133</p>
-                @*</div>
-                <div class="mb-4 mb-lg-0 col-md-6 col-lg-4">*@
-                    <p class="mb-0 font-weight-bold" style="color: gold">Telephone:</p>
-                    <p class="mb-4"><a class="buttonlink" href="tel:+19135234090">1-913-523-4090 </a>
-                @*</div>
-                <div class="mb-4 mb-lg-0 col-md-6 col-lg-4">*@
-                    <p class="mb-0 font-weight-bold" style="color: gold">Email Address:</p>
-                    <p class="mb-4"><a class="buttonlink" href="mailto: ajones@iaff42.org">ajones@iaff42.org</a>
-                </div>
-            </div>
-            <div class="form-horizontal">
-                <div class="row mt-5">
-                    <div class="col-lg-12">
-                        <div class="form-row">
-                            <div class="col-md-3 form-group">
-                                &nbsp;
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <label>Name:</label>
-                                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
-                                <div class="validate"> </div>
-                            </div>
-                            <div class="col-md-3 form-group">
-                                &nbsp;
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-md-3 form-group">
-                                &nbsp;
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <label>Email Address:</label>
-                                @Html.EditorFor(model => model.EmailAddress, new { htmlAttributes = new { @class = "form-control" } })
-                                <div class="validate"> </div>
-                            </div>
-                            <div class="col-md-3 form-group">
-                                &nbsp;
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-md-3 form-group">
-                                &nbsp;
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <label>Subject:</label>
-                                @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control" } })
-                                @*<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />*@
-                                <div class="validate"> </div>
-                            </div>
-                            <div class="col-md-3 form-group">
-                                &nbsp;
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-md-3 form-group">
-                                &nbsp;
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <label>Message:</label>
-                                @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control" } })
-                                <div class="validate">
-                                    @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
-                                </div>
-                            </div>
-                            <div class="col-md-3 form-group">
-                                &nbsp;
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-md-12 form-group">
-                                <div class="text-center">
-                                    <input type="submit" value="Send Message" />
-                                </div>
-                            </div>
-
-                        </div>
-
+                            div.container {
+                                text-align: center;
+                                padding: 10px 20px;
+                            }
+                        </style>
                     </div>
                 </div>
+            </div>
+        </section>*@
+    <section class="responsive">
+        <div class="row mb-5">
+
+            <img src="~/Content/images/KCFDcropresize2.png" class="responsive" />
+
+        </div>
+    </section>
+    <section>
+        <div class="polaroid">
+            <div class="row mb-5 justify-content-center">
+
+            </div>
+        </div>
+    </section>
+    <div class="site-section bg-light" id="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 style="color: gold">Contact Us</h2>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="mb-4 mb-lg-0 col-md-6 col-lg-4">
+                    <p class="mb-0 font-weight-bold" style="color:gold">Address:</p>
+                    <p class="mb-4">6320 Manchester Ave, Suite 41C, Kansas City, MO 64133
+                </div>
+                <div class="mb-4 mb-lg-0 col-md-6 col-lg-4">
+                    <p class="mb-0 font-weight-bold" style="color:gold">Telephone:</p>
+                    <p class="mb-4"><a class="buttonlink" href="tel:+19135234090">1-913-523-4090 </a>
+                </div>
+                <div class="mb-4 mb-lg-0 col-md-6 col-lg-4">
+                    <p class="mb-0 font-weight-bold" style="color:gold">Email Address:</p>
+                    <p class="mb-0"><a class="buttonlink" href="mailto: ajones@iaff42.org">ajones@iaff42.org</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 mb-5">
+                    <form action="#" method="post">
+                        <div class="form-group row">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <input type="text" class="form-control" placeholder="First name">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" placeholder="Email address">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <textarea name="" id="" class="form-control" placeholder="Enter your message." cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6 mr-auto">
+                                <input type="submit" class="btn btn-block btn-primary text-white py-2 px-5" value="Send Message">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
             </div>
         </div>
     </div>
-        @*</div>
-    </div>*@
-}
-@*<div class="row">
-        <div class="col-lg-12 mb-5">
-            <form action="#" method="post">
-                <div class="form-group row">
-                    <div class="col-md-6 mb-3 mb-md-0">
-                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @placeholder ="First name" } })
-                    </div>
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Last name">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-md-12">
-                        <input type="text" class="form-control" placeholder="Email address">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-md-12">
-                        <textarea name="" id="" class="form-control" placeholder="Enter your message." cols="30" rows="10"></textarea>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-md-6 center">
-                        <input type="submit" class="btn btn-block btn-primary text-white py-2 px-5" value="Send Message">
-                    </div>
-                </div>
-            </form>
-        </div>
 
-    </div>*@
+
+
+
+
+
+
+
+
+
+}

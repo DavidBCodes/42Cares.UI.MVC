@@ -83,10 +83,12 @@ body:after {
     outline: none;
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
-  .btn.btn-primary {
-    background: #037ef3;
-    border-color: #037ef3;
-    color: #fff; }
+    .btn.btn-primary {
+        background: #037ef3;
+        border-color: #dbe229;
+        color: #314bc3;
+        text-decoration-color: black;
+    }
     .btn.btn-primary:hover {
       background: #000;
       border-color: #000;
@@ -777,7 +779,16 @@ body:after {
     background-position: top;
     background-position: center center;*/
         /*background-color: rgba(3, 126, 243, 0.54);*/
-        background-image: linear-gradient(to right bottom, #146ec4, #3a85ca, #5d9bce, #82b1d1, #a9c5d5);
+        font-family: 'Times New Roman', Times, serif background-color: #2ee7ff;
+        background: -webkit-linear-gradient(top right, #525994, #000000);
+        background: -moz-linear-gradient(top right, #525994, #000000);
+        background: linear-gradient(to bottom left, #525994, #000000);
+        background-attachment: fixed;
+        background-size: cover;
+        background-attachment: fixed;
+        background-size: cover;
+        color: white;
+        font-size: 18px;
     }
 
         .site-blocks-cover.overlay {
@@ -873,7 +884,16 @@ body:after {
     }
 
     .bg-light {
-        background: linear-gradient(to right bottom, #146ec4, #3a85ca, #5d9bce, #82b1d1, #a9c5d5); /*added for gradient*/
+        font-family: 'Times New Roman', Times, serif background-color: #2ee7ff;
+        background: -webkit-linear-gradient(top right, #525994, #000000);
+        background: -moz-linear-gradient(top right, #525994, #000000);
+        background: linear-gradient(to bottom left, #525994, #000000);
+        background-attachment: fixed;
+        background-size: cover;
+        background-attachment: fixed;
+        background-size: cover;
+        color: white;
+        font-size: 18px;
         /*background: #ccc;*/
     }
 
@@ -2767,4 +2787,7 @@ body:after {
         color: black;
         text-decoration: none;
         cursor: pointer;
+    }
+    .site-footer{
+        text-align:center;
     }
